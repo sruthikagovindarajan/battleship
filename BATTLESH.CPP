@@ -241,7 +241,7 @@ int constraint(int* a,int v)
 int f,t=v-1;
 for(int i=0;i<t;i++)
 {
-if(*(a+i+1)==(*(a+i)+1)||(*(a+i+1)==*(a+i)+8))
+if((*(a+i+1)%8)==(*(a+i)+1)||(*(a+i+1)==*(a+i)+8))
   f=1;
 else
 {
